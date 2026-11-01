@@ -1,0 +1,7 @@
+/* route end labels sit on opposite sides of their points so short routes do not stack */
+.mk.end.from {
+  transform: translate(calc(-100% - 10px), -135%);
+}
+.mk.end.to {
+  transform: translate(10px, 35%);
+}

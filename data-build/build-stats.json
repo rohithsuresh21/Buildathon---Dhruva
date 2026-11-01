@@ -1,0 +1,1013 @@
+{
+ "wpi_rows": 3802,
+ "unlocode_rows": 116272,
+ "wpi_duplicate_locodes_blanked": [
+  [
+   "Zirkuh",
+   "AEZUR"
+  ],
+  [
+   "Zirkuh Oil Field",
+   "AEZUR"
+  ],
+  [
+   "Ireland Island",
+   "BMFPT"
+  ],
+  [
+   "Port Dalhousie",
+   "CADHS"
+  ],
+  [
+   "Kome Kribi 1 Marine Terminal",
+   "CMKBI"
+  ],
+  [
+   "North Ain Sukhna Port",
+   "EGAIS"
+  ],
+  [
+   "Kattupalli Port",
+   "INKRI"
+  ],
+  [
+   "Khawr Al Zubair",
+   "IQKAZ"
+  ],
+  [
+   "Khawr Al Zubair Lng Terminal",
+   "IQKAZ"
+  ],
+  [
+   "Budir",
+   "ISFAS"
+  ],
+  [
+   "Puerto Progreso",
+   "MXPGO"
+  ],
+  [
+   "Sankt-Peterburg",
+   "RULED"
+  ],
+  [
+   "Illichivsk",
+   "UAILK"
+  ],
+  [
+   "St Petersburg",
+   "RULED"
+  ],
+  [
+   "Westhaven Cove",
+   "USWSZ"
+  ],
+  [
+   "Mui Vung Tau",
+   "VNVUT"
+  ]
+ ],
+ "india_unlocode_added": [
+  [
+   "INAIS",
+   "Amini Island",
+   "LD",
+   11.117,
+   72.733,
+   295.4,
+   0.7,
+   "RL"
+  ],
+  [
+   "INALF",
+   "Alleppey",
+   "KL",
+   9.483,
+   76.317,
+   54.5,
+   0.2,
+   "AA"
+  ],
+  [
+   "INBRU",
+   "Bharuch",
+   "GJ",
+   21.7,
+   72.967,
+   44.8,
+   0.5,
+   "RL"
+  ],
+  [
+   "INKPI",
+   "Kalpeni Island",
+   "LD",
+   10.067,
+   73.633,
+   152.7,
+   0.2,
+   "RL"
+  ],
+  [
+   "INMAH",
+   "Mahe",
+   "PY",
+   11.7,
+   75.533,
+   36.6,
+   0.8,
+   "AA"
+  ],
+  [
+   "INMDK",
+   "Mul Dwarka",
+   "GJ",
+   20.75,
+   70.667,
+   35.4,
+   1.0,
+   "AA"
+  ],
+  [
+   "INMRI",
+   "Mithivirdi",
+   "GJ",
+   21.467,
+   72.233,
+   33.4,
+   0.3,
+   "RL"
+  ],
+  [
+   "INPST",
+   "Positra",
+   "GJ",
+   22.4,
+   69.167,
+   11.7,
+   1.5,
+   "RL"
+  ],
+  [
+   "INTAD",
+   "Tadri",
+   "KA",
+   14.517,
+   74.35,
+   22.3,
+   0.3,
+   "AA"
+  ],
+  [
+   "INTHN",
+   "Thane",
+   "MH",
+   19.2,
+   72.967,
+   27.9,
+   4.1,
+   "RL"
+  ],
+  [
+   "INVZJ",
+   "Vazhinjam",
+   "KL",
+   8.383,
+   77.0,
+   12.4,
+   1.7,
+   "AA"
+  ]
+ ],
+ "india_unlocode_rejected": [
+  [
+   "INATU",
+   "Attur",
+   "TN",
+   12.733,
+   79.95,
+   55.7,
+   29.7,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INBDH",
+   "Bhadohi",
+   "UP",
+   25.417,
+   82.567,
+   625.4,
+   634.1,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INBDQ",
+   "Vadodara",
+   "GJ",
+   22.3,
+   73.2,
+   95.8,
+   29.0,
+   "AI",
+   "not on coast/estuary (>12 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INBHU",
+   "Bhavnagar",
+   "GJ",
+   21.767,
+   72.133,
+   10.3,
+   1.6,
+   "AA",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INBOM",
+   "Mumbai (ex Bombay)",
+   "MH",
+   18.967,
+   72.817,
+   5.3,
+   1.8,
+   "AA",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INBPQ",
+   "Pratapganj",
+   "BR",
+   26.3,
+   86.967,
+   439.3,
+   441.2,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INBPT",
+   "Bangarapet",
+   "KA",
+   12.983,
+   78.183,
+   213.8,
+   209.1,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INCCJ",
+   "Kozhikode (ex Calicut)",
+   "KL",
+   11.25,
+   75.767,
+   0.0,
+   0.2,
+   "AA",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INCCU",
+   "Kolkata (ex Calcutta)",
+   "WB",
+   22.567,
+   88.35,
+   2.5,
+   45.4,
+   "AA",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INCOK",
+   "Kochi",
+   "KL",
+   9.967,
+   76.267,
+   3.7,
+   1.7,
+   "AS",
+   "within 10 km of existing WPI India port"
+  ],
+  [
+   "INDIG",
+   "Dighi (Pune)",
+   "MH",
+   18.25,
+   72.967,
+   77.1,
+   0.6,
+   "AA",
+   "ICD/CFS/SEZ entry, goes to surface file"
+  ],
+  [
+   "INDMA",
+   "Dhamara",
+   "OR",
+   20.8,
+   86.9,
+   7.2,
+   1.7,
+   "RL",
+   "within 10 km of existing WPI India port"
+  ],
+  [
+   "INDMQ",
+   "Dhamra Port",
+   "OR",
+   20.817,
+   86.95,
+   1.7,
+   1.3,
+   "RL",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INEKM",
+   "Ernakulam",
+   "KL",
+   9.983,
+   76.283,
+   5.8,
+   0.8,
+   "RL",
+   "within 10 km of existing WPI India port"
+  ],
+  [
+   "INERO",
+   "Erode",
+   "TN",
+   11.35,
+   77.733,
+   211.8,
+   204.6,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INGAN",
+   "Gandhar",
+   "",
+   21.083,
+   72.633,
+   0.0,
+   0.5,
+   "RL",
+   "within 10 km of existing WPI India port"
+  ],
+  [
+   "INGGA",
+   "Gogha",
+   "GJ",
+   21.683,
+   72.267,
+   9.9,
+   1.0,
+   "AA",
+   "within 10 km of existing WPI India port"
+  ],
+  [
+   "INGGV",
+   "Gangavaram",
+   "AP",
+   17.65,
+   83.25,
+   1.9,
+   1.4,
+   "RL",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INGND",
+   "Greater Nodia",
+   "UP",
+   28.817,
+   77.883,
+   932.8,
+   880.7,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INGNO",
+   "Greater Noida",
+   "UP",
+   28.467,
+   77.517,
+   880.7,
+   828.4,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INGRR",
+   "Garden Reach",
+   "WB",
+   22.517,
+   88.3,
+   5.0,
+   38.3,
+   "RL",
+   "within 10 km of existing WPI India port"
+  ],
+  [
+   "INHZA",
+   "Hazira Port/Surat",
+   "GJ",
+   21.083,
+   72.617,
+   1.7,
+   1.4,
+   "RL",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INICD",
+   "New Delhi",
+   "DL",
+   28.6,
+   77.2,
+   877.4,
+   823.6,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INIXJ",
+   "Jammu",
+   "JK",
+   32.7,
+   74.85,
+   1166.4,
+   1133.8,
+   "AI",
+   "not on coast/estuary (>12 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INIXM",
+   "Madurai",
+   "TN",
+   9.933,
+   78.117,
+   126.1,
+   97.9,
+   "AI",
+   "not on coast/estuary (>12 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INIXY",
+   "Kandla",
+   "GJ",
+   23.033,
+   70.217,
+   0.0,
+   4.1,
+   "AA",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INJBD",
+   "Jafarabad",
+   "GJ",
+   20.85,
+   71.367,
+   2.5,
+   0.8,
+   "AA",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INJDG",
+   "Jodhpur",
+   "GJ",
+   21.883,
+   70.033,
+   52.7,
+   50.7,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INKAR",
+   "Karur",
+   "TN",
+   10.95,
+   78.083,
+   194.0,
+   152.4,
+   "AA",
+   "not on coast/estuary (>12 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INKAT",
+   "Kattupalli",
+   "TN",
+   13.3,
+   80.35,
+   0.8,
+   0.9,
+   "RL",
+   "within 10 km of existing WPI India port"
+  ],
+  [
+   "INKHO",
+   "Khodiyar",
+   "GJ",
+   23.05,
+   72.933,
+   150.2,
+   85.5,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INKTK",
+   "Toranagallu",
+   "KA",
+   15.2,
+   76.683,
+   260.9,
+   255.4,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INKTP",
+   "Kattupalli Port",
+   "TN",
+   13.3,
+   80.383,
+   3.5,
+   4.5,
+   "RL",
+   "within 10 km of existing WPI India port"
+  ],
+  [
+   "INLNG",
+   "Lapanga",
+   "OR",
+   21.733,
+   84.017,
+   287.9,
+   252.2,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INMAA",
+   "Chennai (ex Madras)",
+   "TN",
+   13.083,
+   80.283,
+   2.6,
+   1.0,
+   "AA",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INMAC",
+   "Machilipatnam",
+   "AP",
+   16.183,
+   81.133,
+   5.1,
+   7.6,
+   "AM",
+   "within 10 km of existing WPI India port"
+  ],
+  [
+   "INMDV",
+   "Mandvi",
+   "GJ",
+   22.833,
+   69.367,
+   1.7,
+   1.2,
+   "AA",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INMOB",
+   "Morbi",
+   "GJ",
+   22.817,
+   70.833,
+   42.5,
+   38.2,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INMRM",
+   "Marmagao (Marmugao)",
+   "GA",
+   15.4,
+   73.783,
+   2.3,
+   0.9,
+   "AA",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INMRM",
+   "Marmugao (Marmagao)",
+   "GA",
+   15.4,
+   73.783,
+   2.3,
+   0.9,
+   "AA",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INMUG",
+   "Munger",
+   "BR",
+   25.383,
+   86.467,
+   367.7,
+   360.0,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INNEE",
+   "Nindakara",
+   "KL",
+   8.933,
+   76.533,
+   8.8,
+   0.8,
+   "AA",
+   "within 10 km of existing WPI India port"
+  ],
+  [
+   "INNGC",
+   "Nagercoil",
+   "TN",
+   8.167,
+   77.433,
+   20.2,
+   7.9,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INNHV",
+   "Nhave",
+   "MH",
+   18.95,
+   72.967,
+   1.8,
+   0.4,
+   "RL",
+   "within 10 km of existing WPI India port"
+  ],
+  [
+   "INNPT",
+   "Nagappattinam",
+   "TN",
+   10.783,
+   79.817,
+   4.1,
+   3.5,
+   "AA",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INNTU",
+   "New Tuticorin",
+   "TN",
+   8.75,
+   78.217,
+   7.8,
+   1.4,
+   "RL",
+   "within 10 km of existing WPI India port"
+  ],
+  [
+   "INORS",
+   "Orissa",
+   "",
+   20.233,
+   84.267,
+   126.9,
+   114.0,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INPAV",
+   "Pipavav (Victor) Port",
+   "GJ",
+   20.967,
+   71.55,
+   6.5,
+   0.8,
+   "AA",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INPNY",
+   "Pondicherry",
+   "PY",
+   11.917,
+   79.817,
+   2.6,
+   2.1,
+   "AA",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INPPT",
+   "Paradip Port",
+   "OR",
+   20.25,
+   86.583,
+   10.6,
+   3.3,
+   "RL",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INPPV",
+   "Port Pipavav",
+   "GJ",
+   20.933,
+   71.517,
+   1.9,
+   1.4,
+   "RL",
+   "within 10 km of existing WPI India port"
+  ],
+  [
+   "INPRT",
+   "Paradip Garh",
+   "OR",
+   20.317,
+   86.617,
+   8.9,
+   8.3,
+   "AA",
+   "within 10 km of existing WPI India port"
+  ],
+  [
+   "INROZ",
+   "Rozi",
+   "GJ",
+   22.567,
+   70.033,
+   1.4,
+   1.2,
+   "RL",
+   "within 10 km of existing WPI India port"
+  ],
+  [
+   "INSAM",
+   "Samalkot",
+   "AP",
+   17.05,
+   82.183,
+   15.2,
+   12.5,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INSIK",
+   "Sika",
+   "GJ",
+   22.433,
+   69.833,
+   0.0,
+   1.9,
+   "AA",
+   "within 10 km of existing WPI India port"
+  ],
+  [
+   "INSIL",
+   "Siliguri",
+   "WB",
+   26.717,
+   88.417,
+   463.4,
+   405.4,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INSKK",
+   "Sikkim",
+   "AN",
+   27.317,
+   88.617,
+   530.8,
+   455.1,
+   "RL",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INSTV",
+   "Surat",
+   "GJ",
+   21.167,
+   72.833,
+   8.8,
+   4.8,
+   "AI",
+   "within 10 km of existing WPI India port"
+  ],
+  [
+   "INSWA",
+   "Sahnewal",
+   "PB",
+   30.85,
+   75.95,
+   1033.1,
+   998.6,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INTRV",
+   "Thiruvananthapuram (ex Trivandrum)",
+   "KL",
+   8.483,
+   76.917,
+   3.7,
+   0.9,
+   "AI",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INTUT",
+   "Tuticorin",
+   "TN",
+   8.783,
+   78.133,
+   4.1,
+   4.3,
+   "AA",
+   "LOCODE already present from WPI"
+  ],
+  [
+   "INURA",
+   "Uran",
+   "MH",
+   18.883,
+   72.933,
+   7.6,
+   2.1,
+   "RL",
+   "within 10 km of existing WPI India port"
+  ],
+  [
+   "INVTZ",
+   "Visakhapatnam",
+   "AP",
+   17.7,
+   83.3,
+   1.9,
+   1.0,
+   "AA",
+   "within 10 km of existing WPI India port"
+  ],
+  [
+   "INWAD",
+   "Wada",
+   "MH",
+   18.983,
+   73.75,
+   84.2,
+   73.0,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ],
+  [
+   "INZUM",
+   "Tumkur",
+   "KA",
+   16.5,
+   77.083,
+   362.0,
+   347.9,
+   "RL",
+   "not on coast/estuary (>5 km from coastline; RL status needs <=5, approved <=12)"
+  ]
+ ],
+ "ports_selected_before_cap": 1166,
+ "ports_cut_for_cap": 0,
+ "ports_rows": 1166,
+ "ports_india_rows": 66,
+ "ports_class_counts": {
+  "3": 123,
+  "2": 458,
+  "1": 303,
+  "0": 282
+ },
+ "ourairports_rows": 86311,
+ "airports_scheduled_with_iata": 4010,
+ "airports_rows": 878,
+ "airports_india_rows": 116,
+ "airports_india_candidates": 116,
+ "airports_class_counts": {
+  "3": 308,
+  "2": 467,
+  "1": 93,
+  "0": 10
+ },
+ "airports_dropped_for_cap": 3132,
+ "airports_large_dropped": 0,
+ "airports_no_routes_in_cand": 936,
+ "surface_named_dropped_no_coordinate_source": [
+  "Patparganj ICD",
+  "Pithampur ICD"
+ ],
+ "surface_named_coord_disagreements_km": [
+  [
+   "Khodiyar ICD",
+   41.1,
+   [
+    23.05,
+    72.93333333333334
+   ],
+   [
+    23.156554,
+    72.548244
+   ]
+  ]
+ ],
+ "surface_junctions": 134,
+ "surface_rows": 202,
+ "surface_state_source_vs_polygon_mismatches": [
+  [
+   "Tughlakabad ICD",
+   "Delhi",
+   "Haryana",
+   0.0
+  ],
+  [
+   "CMTL ICD/Thimmapur",
+   "Andhra Pradesh",
+   "Telangana",
+   0.0
+  ],
+  [
+   "Secunderabad Jn",
+   "Andhra Pradesh",
+   "Telangana",
+   0.0
+  ],
+  [
+   "Kiul Jn",
+   "Jharkhand",
+   "Bihar",
+   0.0
+  ],
+  [
+   "Luckeesarai Jn",
+   "Jharkhand",
+   "Bihar",
+   0.0
+  ],
+  [
+   "Dornakal Jn",
+   "Andhra Pradesh",
+   "Telangana",
+   0.0
+  ],
+  [
+   "Dhanbad Jn",
+   "West Bengal",
+   "Jharkhand",
+   0.0
+  ],
+  [
+   "Tirupattur Jn",
+   "Karnataka",
+   "Tamil Nadu",
+   0.0
+  ],
+  [
+   "Kazipet Jn",
+   "Andhra Pradesh",
+   "Telangana",
+   0.0
+  ]
+ ],
+ "surface_dropped_offland_unlocode_points": [],
+ "surface_collapsed_same_site_within_1km": [
+  "Concor-ICD/Ballabhgarh",
+  "Kanpur M. G. Goods",
+  "Sabarmati Jn"
+ ],
+ "surface_kind_counts": {
+  "icd": 53,
+  "inland_port": 2,
+  "rail_terminal": 13,
+  "cfs": 1,
+  "junction": 133
+ },
+ "surface_null_state": 0
+}

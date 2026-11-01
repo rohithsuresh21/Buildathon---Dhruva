@@ -1,0 +1,32 @@
+import type { Row } from "../gazetteer";
+
+export const ROWS_D: Row[] = [
+  // ---- Airports (cargo-relevant)
+  ["DEL", "Delhi (IGI)", "airport", "IN", 28.5562, 77.1, "delhi airport|del|igi airport|vidp", { icao: "VIDP", iata: "DEL", state: "Delhi" }],
+  ["BOM", "Mumbai (CSMIA)", "airport", "IN", 19.0887, 72.8679, "mumbai airport|bom|vabb", { icao: "VABB", iata: "BOM", state: "Maharashtra" }],
+  ["MAA", "Chennai", "airport", "IN", 12.9941, 80.1709, "chennai airport|maa|vomm", { icao: "VOMM", iata: "MAA", state: "Tamil Nadu" }],
+  ["BLR", "Bengaluru", "airport", "IN", 13.1979, 77.7063, "bengaluru airport|bangalore airport|blr|vobl", { icao: "VOBL", iata: "BLR", state: "Karnataka" }],
+  ["CCU", "Kolkata", "airport", "IN", 22.6547, 88.4467, "kolkata airport|ccu|vecc", { icao: "VECC", iata: "CCU", state: "West Bengal" }],
+  ["AMD", "Ahmedabad", "airport", "IN", 23.0772, 72.6347, "ahmedabad airport|amd|vaah", { icao: "VAAH", iata: "AMD", state: "Gujarat" }],
+  ["HYD", "Hyderabad", "airport", "IN", 17.2403, 78.4294, "hyderabad airport|hyd|vohs", { icao: "VOHS", iata: "HYD", state: "Telangana" }],
+  ["COK", "Kochi", "airport", "IN", 10.152, 76.4019, "kochi airport|cok|voci", { icao: "VOCI", iata: "COK", state: "Kerala" }],
+  ["HKG", "Hong Kong (HKG)", "airport", "HK", 22.308, 113.9185, "hong kong airport|hkg|vhhh", { icao: "VHHH", iata: "HKG" }],
+  ["SZX", "Shenzhen (SZX)", "airport", "CN", 22.6393, 113.8107, "shenzhen airport|szx|zgsz", { icao: "ZGSZ", iata: "SZX" }],
+  ["CAN", "Guangzhou (CAN)", "airport", "CN", 23.3924, 113.2988, "guangzhou airport|can|zggg", { icao: "ZGGG", iata: "CAN" }],
+  ["PVG", "Shanghai (PVG)", "airport", "CN", 31.1434, 121.8052, "shanghai airport|pvg|zspd", { icao: "ZSPD", iata: "PVG" }],
+  ["SIN", "Singapore (Changi)", "airport", "SG", 1.3644, 103.9915, "singapore airport|changi|sin|wsss", { icao: "WSSS", iata: "SIN" }],
+  ["DXB", "Dubai (DXB)", "airport", "AE", 25.2532, 55.3657, "dubai airport|dxb|omdb", { icao: "OMDB", iata: "DXB" }],
+  ["DOH", "Doha (Hamad)", "airport", "QA", 25.2731, 51.6081, "doha airport|doh|othh", { icao: "OTHH", iata: "DOH" }],
+  ["FRA", "Frankfurt", "airport", "DE", 50.0379, 8.5622, "frankfurt airport|fra|eddf", { icao: "EDDF", iata: "FRA" }],
+  ["LHR", "London Heathrow", "airport", "GB", 51.47, -0.4543, "heathrow|london airport|lhr|egll", { icao: "EGLL", iata: "LHR" }],
+  ["AMS", "Amsterdam Schiphol", "airport", "NL", 52.3105, 4.7683, "schiphol|amsterdam airport|ams|eham", { icao: "EHAM", iata: "AMS" }],
+  ["JFK", "New York (JFK)", "airport", "US", 40.6413, -73.7781, "jfk|new york airport|kjfk", { icao: "KJFK", iata: "JFK" }],
+  ["ORD", "Chicago (O'Hare)", "airport", "US", 41.9742, -87.9073, "o'hare|chicago airport|ord|kord", { icao: "KORD", iata: "ORD" }],
+  ["LAX", "Los Angeles (LAX)", "airport", "US", 33.9416, -118.4085, "lax|los angeles airport|klax", { icao: "KLAX", iata: "LAX" }],
+  ["BKK", "Bangkok (Suvarnabhumi)", "airport", "TH", 13.69, 100.7501, "suvarnabhumi|bangkok airport|bkk|vtbs", { icao: "VTBS", iata: "BKK" }],
+  ["ICN", "Seoul (Incheon)", "airport", "KR", 37.4602, 126.4407, "incheon|seoul airport|icn|rksi", { icao: "RKSI", iata: "ICN" }],
+  ["TPE", "Taipei (Taoyuan)", "airport", "TW", 25.0777, 121.2328, "taoyuan|taipei airport|tpe|rctp", { icao: "RCTP", iata: "TPE" }],
+  ["NRT", "Tokyo (Narita)", "airport", "JP", 35.772, 140.3929, "narita|tokyo airport|nrt|rjaa", { icao: "RJAA", iata: "NRT" }],
+  ["NBO", "Nairobi", "airport", "KE", -1.3192, 36.9275, "nairobi airport|nbo|hkjk", { icao: "HKJK", iata: "NBO" }],
+  ["JNB", "Johannesburg", "airport", "ZA", -26.1392, 28.246, "johannesburg airport|jnb|faor", { icao: "FAOR", iata: "JNB" }],
+];

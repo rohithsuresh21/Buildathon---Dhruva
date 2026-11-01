@@ -1,0 +1,79 @@
+/* ───────── agent pipeline ───────── */
+.pipe {
+  list-style: none;
+  margin: 0;
+  padding: 6px 24px 0 0;
+  position: relative;
+}
+.pipe::before {
+  content: "";
+  position: absolute;
+  left: 23px;
+  top: 38px;
+  bottom: 34px;
+  width: 1px;
+  background: var(--rule-strong);
+}
+.pipe-st {
+  position: relative;
+  padding: 22px 0 22px 56px;
+}
+.pipe-st + .pipe-st {
+  border-top: 1px solid var(--rule);
+}
+.pipe-dot {
+  position: absolute;
+  left: 17px;
+  top: 30px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--panel);
+  border: 1.5px solid var(--dim);
+  transition: background 0.5s, border-color 0.5s, box-shadow 0.5s;
+}
+.pipe-st.on .pipe-dot {
+  background: var(--lamp);
+  border-color: var(--lamp);
+  box-shadow: 0 0 0 6px var(--lamp-soft);
+}
+.pipe-head {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.pipe-head .h3 {
+  font-size: 28px;
+  transition: color 0.5s;
+}
+.pipe-st.on .pipe-head .h3 {
+  color: var(--lamp-hot);
+}
+.pipe-ag {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px 32px;
+}
+.pipe-ag li {
+  display: grid;
+  gap: 1px;
+}
+.pipe-ag strong {
+  font-weight: 600;
+  font-size: 15.5px;
+  color: var(--star);
+}
+.pipe-ag span {
+  font-size: 14.5px;
+  color: var(--mist);
+  line-height: 1.45;
+}
+.pipe-foot {
+  padding: 16px 24px 20px 56px;
+  border-top: 1px solid var(--rule);
+  max-width: 70ch;
+}

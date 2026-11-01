@@ -1,0 +1,91 @@
+files: ports.json 48602 B (1166 rows, cap 71680), airports.json 46073 B (878 rows, cap 46080), india-surface.json 10639 B (202 rows, cap 25600)
+
+=== 1. Schema, coordinate ranges, rounding
+ports          rows=1166 bad=0
+airports       rows=878 bad=0
+india-surface  rows=202 bad=0
+surface kinds: {'icd': 53, 'inland_port': 2, 'rail_terminal': 13, 'cfs': 1, 'junction': 133}
+airports/ports country codes unique-valid: 193 port countries; 177 airport countries
+
+=== 2. Duplicates (same name + country within 5 km; duplicate codes)
+ports          same-name<5km duplicates: 0
+airports       same-name<5km duplicates: 0
+india-surface  same-name<5km duplicates: 0
+airports duplicate IATA: []
+ports duplicate non-empty LOCODE: ['FRDKK', 'SVAQJ', 'THSRI']
+ports: different-name pairs <1 km apart, same country (informational): 2
+
+=== 3. India bounding boxes
+Indian ports outside coastal bbox [6.5-24.0N, 68-94E]: []
+Indian airports outside bbox: []
+India surface outside bbox: []
+NOTE: no EEZ polygon was available in the sandbox; a bounding box is a weaker test than an EEZ test.
+Indian ports >15 km from Natural Earth 10m coastline (COAST_PTS test): [('Calcutta', 42.8)]
+
+=== 4. Spot checks vs reference coordinates (tolerance 0.1 deg lat AND lon)
+  OK        port Mundra         row=Mundra                                 file=(22.73,69.71) ref=(22.74,69.70) dlat=0.01 dlon=0.01 dist=1.5 km
+  OK        port JNPT           row=Jawaharlal Nehru Port (Nhava Shiva)    file=(18.95,72.95) ref=(18.95,72.95) dlat=0.00 dlon=0.00 dist=0.0 km
+  DEVIATION port Rotterdam      row=Rotterdam                              file=(51.90,4.48) ref=(51.95,4.14) dlat=0.05 dlon=0.34 dist=24.0 km
+  OK        port Chennai        row=Chennai (Madras)                       file=(13.10,80.30) ref=(13.08,80.29) dlat=0.02 dlon=0.01 dist=2.5 km
+  OK        port Colombo        row=Colombo                                file=(6.95,79.85) ref=(6.95,79.85) dlat=0.00 dlon=0.00 dist=0.0 km
+  OK        port Jebel Ali      row=Mina Jabal Ali                         file=(25.02,55.05) ref=(25.00,55.06) dlat=0.02 dlon=0.01 dist=2.4 km
+  OK        port Singapore      row=Keppel - (East Singapore)              file=(1.28,103.85) ref=(1.26,103.84) dlat=0.02 dlon=0.01 dist=2.5 km
+  OK        port Shanghai       row=Shanghai                               file=(31.22,121.50) ref=(31.23,121.47) dlat=0.01 dlon=0.03 dist=3.1 km
+  OK        port Hamburg        row=Hamburg                                file=(53.55,9.93) ref=(53.54,9.97) dlat=0.01 dlon=0.04 dist=2.9 km
+  OK        port Los Angeles    row=Los Angeles                            file=(33.75,-118.25) ref=(33.73,-118.26) dlat=0.02 dlon=0.01 dist=2.4 km
+  OK        port Busan          row=Busan                                  file=(35.10,129.03) ref=(35.10,129.04) dlat=0.00 dlon=0.01 dist=0.9 km
+  OK        port Kochi          row=Kochi (Cochin)                         file=(9.97,76.23) ref=(9.97,76.27) dlat=0.00 dlon=0.04 dist=4.4 km
+  OK        port Visakhapatnam  row=Vishakhapatnam                         file=(17.68,83.30) ref=(17.69,83.29) dlat=0.01 dlon=0.01 dist=1.5 km
+  OK        port Antwerp        row=Antwerpen                              file=(51.22,4.40) ref=(51.27,4.34) dlat=0.05 dlon=0.06 dist=7.0 km
+  OK        port Port Klang     row=Port Klang                             file=(3.00,101.40) ref=(3.00,101.39) dlat=0.00 dlon=0.01 dist=1.1 km
+  OK        port Karachi        row=Karachi                                file=(24.78,66.98) ref=(24.84,66.98) dlat=0.06 dlon=0.00 dist=6.7 km
+  OK        port Haldia         row=Haldia Port                            file=(22.02,88.08) ref=(22.03,88.07) dlat=0.01 dlon=0.01 dist=1.5 km
+  OK        port Kandla         row=Kandla                                 file=(23.03,70.22) ref=(23.03,70.22) dlat=0.00 dlon=0.00 dist=0.0 km
+  OK        airport DEL  row=Indira Gandhi                  file=(28.56,77.10) ref=(28.556,77.100) dlat=0.00 dlon=0.00
+  OK        airport BOM  row=Chhatrapati Shivaji Maharaj    file=(19.09,72.87) ref=(19.089,72.868) dlat=0.00 dlon=0.00
+  OK        airport FRA  row=Frankfurt Main                 file=(50.03,8.56) ref=(50.038,8.562) dlat=0.01 dlon=0.00
+  OK        airport LHR  row=London Heathrow                file=(51.47,-0.46) ref=(51.470,-0.454) dlat=0.00 dlon=0.01
+  OK        airport JFK  row=John F. Kennedy                file=(40.64,-73.78) ref=(40.641,-73.778) dlat=0.00 dlon=0.00
+  OK        airport SIN  row=Singapore Changi               file=(1.35,103.99) ref=(1.364,103.991) dlat=0.01 dlon=0.00
+  OK        airport DXB  row=Dubai                          file=(25.25,55.37) ref=(25.253,55.366) dlat=0.00 dlon=0.00
+  OK        airport HKG  row=Hong Kong                      file=(22.31,113.91) ref=(22.308,113.918) dlat=0.00 dlon=0.01
+  OK        airport MAA  row=Chennai                        file=(12.99,80.17) ref=(12.994,80.171) dlat=0.00 dlon=0.00
+  OK        airport BLR  row=Kempegowda International Airpo file=(13.20,77.71) ref=(13.199,77.707) dlat=0.00 dlon=0.00
+  OK        airport CCU  row=Netaji Subhash Chandra Bose    file=(22.65,88.45) ref=(22.655,88.447) dlat=0.01 dlon=0.00
+  OK        airport HYD  row=Rajiv Gandhi                   file=(17.23,78.43) ref=(17.240,78.429) dlat=0.01 dlon=0.00
+  OK        airport PVG  row=Shanghai Pudong                file=(31.14,121.81) ref=(31.144,121.808) dlat=0.00 dlon=0.00
+  OK        airport MEM  row=Frederick W. Smith             file=(35.04,-89.98) ref=(35.042,-89.977) dlat=0.00 dlon=0.00
+  OK        airport CDG  row=Charles de Gaulle              file=(49.01,2.55) ref=(49.010,2.548) dlat=0.00 dlon=0.00
+spot checks: 33 total, 1 deviations >0.1 deg, 0 missing from file
+
+=== 5. Coverage assertions
+Indian IATA sanity set missing from airports.json: []
+Indian ports rows: 66 | Indian airports rows: 116
+  surface contains Tughlakabad  yes
+  surface contains Dadri        yes
+  surface contains Khodiyar     yes
+  surface contains Sanand       yes
+  surface contains Kanakpura    yes
+  surface contains Dhandarikalan yes
+  surface contains MIHAN        yes
+  surface contains Patparganj   NO
+  surface contains Pithampur    NO
+  surface contains Varanasi     yes
+  surface contains Haldia       yes
+  South Asia   ports: IN=66, PK=3, BD=2, LK=6, MV=1, NP=0
+  SE Asia      ports: ID=20, MY=20, TH=20, VN=16, PH=20, SG=5, KH=2, MM=7
+  Middle East  ports: AE=14, SA=14, OM=7, QA=7, KW=6, BH=4, IR=14, IQ=6
+  East Africa  ports: KE=4, TZ=8, MZ=11, MG=13, SO=6, DJ=2
+  Europe       ports: GB=19, FR=17, ES=20, IT=20, GR=12, DE=12, NL=12, BE=7, DK=12, NO=27, SE=20, FI=12, PL=10, RO=11, BG=2, HR=12
+
+=== RESULT
+HARD FAILURES: 0
+WARNINGS: 8
+  WARN port LOCODE country prefix differs from country: ['Salina', 'BQ', 12.08, -68.28, 1, 'BRSAA']
+  WARN port LOCODE country prefix differs from country: ['Laayoune', 'EH', 27.08, -13.43, 0, 'MAEUN']
+  WARN port LOCODE country prefix differs from country: ['Gustavia', 'GP', 17.9, -62.85, 1, 'BLGUS']
+  WARN dup LOCODE FRDKK
+  WARN dup LOCODE SVAQJ
+  WARN dup LOCODE THSRI
+  WARN IN port far from coast ('Calcutta', 42.8)
+  WARN 1 spot-check deviations > 0.1 deg
