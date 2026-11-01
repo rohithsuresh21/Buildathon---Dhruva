@@ -29,6 +29,7 @@ export async function GET(req: Request) {
   let radius = 8;
   let { agencies: raw, stamp } = await nearbyAgencies(lat, lon, radius);
   stamps.push(stamp);
+  if (stamp.ok && stamp.id === "osm-nominatim") notes.push("The full OpenStreetMap search was busy, so this list comes from the quicker search and may miss some agencies.");
   if (stamp.ok && raw.length < 5) {
     radius = 25;
     const wider = await nearbyAgencies(lat, lon, radius);

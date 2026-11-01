@@ -14,7 +14,8 @@ All sources are free to read and require no key unless stated. Each response car
 | NOAA AviationWeather, FAA NAS | METARs, SIGMETs, airport delays | |
 | OSRM | Road route geometry | OpenStreetMap-derived |
 | GDELT | Headlines near a place | Used when it answers |
-| OpenStreetMap via Overpass | Courier shops, post offices, logistics offices near a point | Two public mirrors; coverage varies by town |
+| OpenStreetMap via Overpass | Courier shops, post offices, logistics offices near a point | Four public mirrors asked in parallel; coverage varies by town |
+| OpenStreetMap via Nominatim | Same data, named couriers and post offices only | Backup when Overpass is busy; answers fast but finds fewer places. The response says which source produced the list |
 | Google Places (New) | Ratings and review counts for agencies | Only with `GOOGLE_MAPS_API_KEY` |
 
 ## Static, open data (built once, see `data-build/`)
